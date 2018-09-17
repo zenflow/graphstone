@@ -1,0 +1,22 @@
+{
+  "name": "graphstone",
+  "version": "0.0.1",
+  "description": "GraphQL service layer for KeystoneJS 4.x",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zenflow/graphstone.git"
+  },
+  "author": {
+    "name": "Matthew Francis Brunetti",
+    "email": "zenflow87@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zenflow/graphstone/issues"
+  },
+  "homepage": "https://github.com/zenflow/graphstone#readme",
+  "dependencies": {}
+}

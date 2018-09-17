@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "name": "graphstone-demo",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "node keystone.js"
+  },
+  "dependencies": {
+    "connect-mongo": "^2.0.1",
+    "dotenv": "^6.0.0",
+    "keystone": "^4.0.0"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "name": "graphstone-monorepo",
+  "version": "0.0.0",
+  "scripts": {
+    "lint": "zenflow-lint-js",
+    "fix": "zenflow-lint-js --fix"
+  },
+  "devDependencies": {
+    "zenflow-lint-js": "^2.0.0"
+  },
+  "workspaces": ["library", "demo"]
+}
