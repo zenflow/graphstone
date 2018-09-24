@@ -1,11 +1,9 @@
 const keystone = require('keystone')
-const Types = keystone.Field.Types
+const { Types } = keystone.Field
 
-/**
- * User Model
- * ==========
- */
-const User = new keystone.List('User')
+const User = new keystone.List('User', {
+  authorize: user => user && user.isAdmin,
+})
 
 User.add(
   {

@@ -2,9 +2,7 @@
   "name": "graphstone",
   "version": "0.0.1",
   "description": "GraphQL service layer for KeystoneJS 4.x",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zenflow/graphstone.git"
@@ -18,5 +16,9 @@
     "url": "https://github.com/zenflow/graphstone/issues"
   },
   "homepage": "https://github.com/zenflow/graphstone#readme",
-  "dependencies": {}
+  "dependencies": {
+    "dataloader": "^1.4.0",
+    "graphql": "^14.0.2",
+    "graphql-tools": "^4.0.0"
+  }
 }

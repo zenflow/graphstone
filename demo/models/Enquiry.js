@@ -1,14 +1,15 @@
 const keystone = require('keystone')
-const Types = keystone.Field.Types
-
-/**
- * Enquiry Model
- * =============
- */
+const { Types } = keystone.Field
 
 const Enquiry = new keystone.List('Enquiry', {
   nocreate: true,
   noedit: true,
+  authorize: {
+    create: user => !user || !user.isAdmin,
+    read: user => user && user.isAdmin,
+    update: false,
+    delete: user => user && user.isAdmin,
+  },
 })
 
 Enquiry.add({

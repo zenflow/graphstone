@@ -1,12 +1,11 @@
 const keystone = require('keystone')
 
-/**
- * PostCategory Model
- * ==================
- */
-
 const PostCategory = new keystone.List('PostCategory', {
   autokey: { from: 'name', path: 'key', unique: true },
+  authorize: {
+    crud: user => user && user.isAdmin,
+    read: true,
+  },
 })
 
 PostCategory.add({

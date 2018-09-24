@@ -1,14 +1,13 @@
 const keystone = require('keystone')
-const Types = keystone.Field.Types
-
-/**
- * Post Model
- * ==========
- */
+const { Types } = keystone.Field
 
 const Post = new keystone.List('Post', {
   map: { name: 'title' },
   autokey: { path: 'slug', from: 'title', unique: true },
+  authorize: {
+    crud: user => user && user.isAdmin,
+    read: (user, post) => post.state === 'published' || (user && user.isAdmin),
+  },
 })
 
 Post.add({

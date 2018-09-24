@@ -8,6 +8,8 @@
   "dependencies": {
     "connect-mongo": "^2.0.1",
     "dotenv": "^6.0.0",
+    "express-graphql": "^0.6.12",
+    "graphstone": "^0.0.1",
     "keystone": "^4.0.0"
   }
 }
